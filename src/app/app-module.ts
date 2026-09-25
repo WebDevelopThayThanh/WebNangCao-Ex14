@@ -23,6 +23,8 @@ import { ProductListCallHttpServiceComponent } from './product-list-call-http-se
 import { ServiceProductImageEventComponent } from './service-product-image-event/service-product-image-event';
 import { ServiceProductImageEventDetailComponent } from './service-product-image-event-detail/service-product-image-event-detail';
 
+import { CatalogComponent } from './catalog/catalog';
+
 @NgModule({
   declarations: [
     App,
@@ -38,15 +40,10 @@ import { ServiceProductImageEventDetailComponent } from './service-product-image
     ProductListCallServiceComponent,
     ProductListCallHttpServiceComponent,
     ServiceProductImageEventComponent,
-    ServiceProductImageEventDetailComponent 
+    ServiceProductImageEventDetailComponent,
+    CatalogComponent,
   ],
-  imports: [
-    BrowserModule,
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, CommonModule, FormsModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [App],
 })

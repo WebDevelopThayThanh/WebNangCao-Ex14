@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// TOÀN BỘ IMPORT PHẢI NẰM Ở ĐÂY (TRÊN CÙNG):
+
 import { BindingPropertyComponent } from './binding-property-component/binding-property-component';
 import { BindingClassComponent } from './binding-class-component/binding-class-component';
 import { BindingStyleComponent } from './binding-style-component/binding-style-component';
@@ -11,6 +11,7 @@ import {  ProductDropdownListComponent } from './product-dropout-list-component/
 import { ProductListCallServiceComponent } from './product-list-call-service-component/product-list-call-service-component';
 import { ServiceProductImageEventComponent } from './service-product-image-event/service-product-image-event';
 import { ServiceProductImageEventDetailComponent } from './service-product-image-event-detail/service-product-image-event-detail';
+import { CatalogComponent } from './catalog/catalog';
 
 const routes: Routes = [
   { path: 'binding-property', component: BindingPropertyComponent },
@@ -20,9 +21,10 @@ const routes: Routes = [
   { path: 'product-list', component: ProductListComponent },
   { path: 'product-dropdown-list', component: ProductDropdownListComponent },
   { path: 'product-dropdown-list-call-service', component: ProductListCallServiceComponent },
-  { path: '', redirectTo: 'service-product-image-event', pathMatch: 'full' }, 
+  { path: '', redirectTo: 'catalog', pathMatch: 'full' }, 
   { path: 'service-product-image-event', component: ServiceProductImageEventComponent },
-  { path: 'service-product-image-event/:id', component: ServiceProductImageEventDetailComponent }
+  { path: 'service-product-image-event/:id', component: ServiceProductImageEventDetailComponent },
+  { path: 'catalog', component: CatalogComponent }
 ];
 
 @NgModule({
