@@ -1,0 +1,5 @@
+[
+    {"id":1,"name":" Martin","price":10.99,"image_link":"https://example.com/product1.jpg"},
+    {"id":2,"name":"Juhoon","price":19.99,"image_link":"https://example.com/product2.jpg"},
+    {"id":3,"name":"James","price":5.99,"image_link":"https://example.com/product3.jpg"}
+]

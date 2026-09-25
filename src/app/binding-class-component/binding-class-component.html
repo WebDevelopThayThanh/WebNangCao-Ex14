@@ -1,0 +1,15 @@
+<p>binding-class-component works!</p>
+<p>binding-class-component works!</p>
+
+<!-- Nút 1: Class binding dạng [class.tên-class] -->
+<button class="btn"
+        [class.btn-saved]="isSaved"
+        (click)="toggleSaveState()">
+  {{ isSaved ? 'Saved' : 'Re-Save' }}
+</button>
+
+<!-- Nút 2: Class binding dạng đối tượng [class]="{...}" -->
+<button [class]="{'btn': true, 'btn-active': isActive, 'btn-saved': isSaved}"
+        (click)="toggleSaveState()">
+  Re-Save
+</button>

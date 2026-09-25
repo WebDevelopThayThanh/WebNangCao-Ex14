@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Giúp tính toán kích thước viền chính xác hơn */
+}
+
+body {
+    padding: 10px; /* Tạo khoảng cách nhỏ ở lề trang */
+}
+
+#container {
+    border: 1px solid blue; /* Viền màu xanh như hình */
+    background: gray;       /* Nền màu xám */
+    width: 100%;            /* Trải dài hết chiều ngang */
+    margin-top: 5px;        /* Khoảng cách với dòng chữ Nhật Minh bên trên */
+}
+
+#container ul {
+    list-style: none;
+    display: flex;          /* Sử dụng Flexbox để dàn hàng ngang */
+    justify-content: space-around; /* Chia đều khoảng cách giữa các mục */
+    align-items: center;
+}
+
+#container ul li {
+    position: relative;
+}
+
+#container ul li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 10px;    /* Tăng padding để thanh menu cao hơn và dễ click */
+    font-family: serif;     /* Font chữ có chân giống trong hình */
+}
+
+/* Hiệu ứng khi di chuột qua */
+#container li a:hover {
+    color: white;
+    background: orange;
+}
+
+/* --- Phần Submenu (Menu con) --- */
+#container li ul {
+    position: absolute;
+    display: none;
+    width: 12em;
+    background: gray;
+    flex-direction: column; /* Menu con hiện theo chiều dọc */
+    left: 0;
+    top: 100%;
+    z-index: 10;
+}
+
+#container li:hover ul {
+    display: flex;
+}
+
+#container ul li ul li {
+    width: 100%;
+    border: 1px solid green;
+}
+
+
+

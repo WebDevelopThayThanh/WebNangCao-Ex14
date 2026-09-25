@@ -1,0 +1,14 @@
+thead tr{
+    background-color: yellow;
+}
+table tr, td, th{
+    
+    border: 1px solid black;
+    border-style: solid;
+}
+tbody tr:nth-child(2n){
+    background-color: #c7f1cd;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #f9c7ee;
+}
